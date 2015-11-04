@@ -88,7 +88,7 @@
             android:inputType="date"
             android:ems="10"
             android:id="@+id/editText7"
-            android:layout_marginLeft="9dp" />
+            android:layout_marginLeft="13dp" />
     </LinearLayout>
 
     <LinearLayout
