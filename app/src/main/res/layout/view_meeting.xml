@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/project"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/newMeetingText"
+        android:layout_alignRight="@+id/attendeesListView"
+        android:layout_alignEnd="@+id/attendeesListView"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignBottom="@+id/projectText"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Meeting:"
+        android:id="@+id/projectText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date:"
+        android:id="@+id/dateText"
+        android:layout_below="@+id/projectText"
+        android:layout_alignLeft="@+id/projectText"
+        android:layout_alignStart="@+id/projectText"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/project"
+        android:layout_toRightOf="@+id/attendeesText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Attendees:"
+        android:id="@+id/attendeesText"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/dateText"
+        android:layout_alignStart="@+id/dateText" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendeesListView"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:layout_alignTop="@+id/attendeesText"
+        android:layout_toRightOf="@+id/attendeesText"
+        android:layout_alignBottom="@+id/taskListText"
+        android:choiceMode="singleChoice"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task List"
+        android:id="@+id/taskListText"
+        android:layout_marginTop="86dp"
+        android:layout_below="@+id/attendeesText"
+        android:layout_alignLeft="@+id/attendeesText"
+        android:layout_alignStart="@+id/attendeesText" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskListView"
+        android:layout_below="@+id/attendeesListView"
+        android:layout_alignLeft="@+id/taskListText"
+        android:layout_alignStart="@+id/taskListText"
+        android:layout_above="@+id/addTaskButton"
+        android:choiceMode="singleChoice"
+        android:layout_alignRight="@+id/attendeesListView"
+        android:layout_alignEnd="@+id/attendeesListView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Add  "
+        android:id="@+id/addTaskButton"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/deleteTaskButton"
+        android:layout_toEndOf="@+id/deleteTaskButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deleteTaskButton"
+        android:layout_alignTop="@+id/addTaskButton"
+        android:layout_alignLeft="@+id/taskListView"
+        android:layout_alignStart="@+id/taskListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_alignTop="@+id/addTaskButton"
+        android:layout_alignRight="@+id/project"
+        android:layout_alignEnd="@+id/project" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Edit Meeting"
+        android:id="@+id/newMeetingText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/minusButton"
+        android:background="@drawable/minus"
+        android:layout_below="@+id/attendeesText"
+        android:layout_alignLeft="@+id/attendeesText"
+        android:layout_alignStart="@+id/attendeesText"
+        android:layout_marginTop="8dp" />
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/minusButton"
+        android:layout_toRightOf="@+id/dateText"
+        android:layout_toEndOf="@+id/dateText">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:id="@+id/plusButton"
+            android:src="@drawable/plus"
+            android:background="@null"
+            android:layout_below="@+id/attendeesText"
+            android:layout_alignLeft="@+id/attendeesText"
+            android:layout_alignStart="@+id/attendeesText"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="-42dp"/>
+
+    </FrameLayout>
+</RelativeLayout>
