@@ -8,9 +8,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+
+import java.io.Console;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    public final static String UserName = "com.mycompany.myfirstapp.USERNAME";
+    public final static String Password = "com.mycompany.myfirstapp.PASSWORD";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,5 +56,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void sendCredentials(View view){
+        Intent intent = new Intent(this, ProjectChooseActivity.class);
+        EditText username_box = (EditText) findViewById(R.id.username);
+        String username = username_box.getText().toString();
+
+        EditText password_box = (EditText) findViewById(R.id.password);
+        String password = password_box.getText().toString();
+
+        intent.putExtra(UserName, username);
+        intent.putExtra(Password, password);
+
+        startActivity(intent);
+
     }
 }
