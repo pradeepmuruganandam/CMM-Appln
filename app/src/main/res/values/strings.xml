@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">CMM-Appln</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_project_choose">Construction Meeting Minutes App</string>
+    <string name="project_title">Construction Meeting Minutes App</string>
+    <string name="project_choose_prompt">Which Project do you want to choose ?</string>
 </resources>

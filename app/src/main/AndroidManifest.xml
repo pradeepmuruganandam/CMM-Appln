@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ProjectChooseActivity"
+            android:label="@string/title_activity_project_choose"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName="usc.cs577.team06.cmm_appln.MainActivity" >
+        </activity>
     </application>
 
 </manifest>
