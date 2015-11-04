@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/project"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/newMeetingText"
+        android:layout_alignRight="@+id/attendeesListView"
+        android:layout_alignEnd="@+id/attendeesListView"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignBottom="@+id/projectText"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Project:"
+        android:id="@+id/projectText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Date:"
+        android:id="@+id/dateText"
+        android:layout_below="@+id/projectText"
+        android:layout_alignLeft="@+id/projectText"
+        android:layout_alignStart="@+id/projectText"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_below="@+id/project"
+        android:layout_toRightOf="@+id/attendeesText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Attendees:"
+        android:id="@+id/attendeesText"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/dateText"
+        android:layout_alignStart="@+id/dateText" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendeesListView"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:layout_alignTop="@+id/attendeesText"
+        android:layout_toRightOf="@+id/attendeesText"
+        android:choiceMode="singleChoice"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_above="@+id/spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Meeting Type:"
+        android:id="@+id/meetingTypeText"
+        android:layout_below="@+id/attendeesText"
+        android:layout_alignLeft="@+id/dateText"
+        android:layout_alignStart="@+id/dateText"
+        android:layout_marginTop="110dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/meetingTypeText"
+        android:layout_toRightOf="@+id/meetingTypeText"
+        android:layout_toEndOf="@+id/meetingTypeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Task List"
+        android:id="@+id/taskListText"
+        android:layout_marginTop="170dp"
+        android:layout_below="@+id/attendeesText"
+        android:layout_alignLeft="@+id/attendeesText"
+        android:layout_alignStart="@+id/attendeesText" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskListView"
+        android:layout_alignLeft="@+id/taskListText"
+        android:layout_alignStart="@+id/taskListText"
+        android:layout_above="@+id/addTaskButton"
+        android:choiceMode="singleChoice"
+        android:layout_alignRight="@+id/attendeesListView"
+        android:layout_alignEnd="@+id/attendeesListView"
+        android:layout_below="@+id/taskListText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:id="@+id/addTaskButton"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/taskListView"
+        android:layout_alignStart="@+id/taskListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/createButton"
+        android:layout_below="@+id/taskListView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New Meeting"
+        android:id="@+id/newMeetingText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/minusButton"
+        android:background="@drawable/minus"
+        android:layout_below="@+id/attendeesText"
+        android:layout_alignLeft="@+id/attendeesText"
+        android:layout_alignStart="@+id/attendeesText"
+        android:layout_marginTop="8dp" />
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/minusButton"
+        android:layout_toRightOf="@+id/dateText"
+        android:layout_toEndOf="@+id/dateText"
+        android:id="@+id/frameLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:id="@+id/plusButton"
+            android:src="@drawable/plus"
+            android:background="@null"
+            android:layout_below="@+id/attendeesText"
+            android:layout_alignLeft="@+id/attendeesText"
+            android:layout_alignStart="@+id/attendeesText"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="-42dp"/>
+
+    </FrameLayout>
+</RelativeLayout>
