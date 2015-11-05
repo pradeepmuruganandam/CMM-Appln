@@ -102,4 +102,14 @@
         android:id="@+id/finding_password_textView"
         android:layout_below="@+id/signup_textView"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:id="@+id/dashboard"
+        android:onClick="toDashboard"
+        android:layout_below="@+id/finding_password_textView"
+        android:layout_alignLeft="@+id/remember_switch"
+        android:layout_alignStart="@+id/remember_switch" />
 </RelativeLayout>
