@@ -109,7 +109,7 @@
         android:text="Dashboard"
         android:id="@+id/dashboard"
         android:onClick="toDashboard"
-        android:layout_below="@+id/finding_password_textView"
+        android:layout_below="@+id/password"
         android:layout_alignLeft="@+id/remember_switch"
         android:layout_alignStart="@+id/remember_switch" />
 </RelativeLayout>

@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toDashboard(View view){
-        Intent intent = new Intent(this, ProjectChooseActivity.class);
+        Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }
 }
