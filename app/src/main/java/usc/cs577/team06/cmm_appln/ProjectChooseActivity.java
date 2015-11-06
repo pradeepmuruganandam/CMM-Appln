@@ -34,20 +34,29 @@ public class ProjectChooseActivity extends AppCompatActivity {
         String password = intent.getStringExtra(MainActivity.Password);
 
         String message = "Username : "+ username + " \n" + "Password : "+password;
-        // Create the text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
 
         List<String> items = new ArrayList<String>();
-        items.add(username);
-        items.add(password);
         items.add("USC Village");
         items.add("USC Construction");
+
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,items);
 
         lv.setAdapter(arrayAdapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
+                Intent intent = new Intent(getApplicationContext(), DashboardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+    }
+
+    public void toNewProject(View view){
+        Intent intent = new Intent(this, NewProjectActivity.class);
+        startActivity(intent);
     }
 
 }

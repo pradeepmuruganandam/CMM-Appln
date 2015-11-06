@@ -29,6 +29,24 @@
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity
+            android:name=".NewMeetingActivity"
+            android:label="@string/title_activity_project_choose"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".EditContactInfoActivity" >
+        </activity>
+        <activity android:name=".ViewMeetingActivity" >
+        </activity>
+        <activity android:name=".PublishMeetingActivity" >
+        </activity>
+        <activity android:name=".SignupActivity" >
+        </activity>
+        <activity android:name=".NewProjectActivity" >
+        </activity>
+        <activity android:name=".ProjectCategoryChooseActivity" >
+        </activity>
     </application>
 
 </manifest>

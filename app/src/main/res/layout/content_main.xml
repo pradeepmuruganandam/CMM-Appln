@@ -60,10 +60,10 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Remember Me"
         android:id="@+id/textView3"
+        android:layout_marginTop="44dp"
         android:layout_below="@+id/password"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password"
-        android:layout_marginTop="39dp" />
+        android:layout_toLeftOf="@+id/login_button"
+        android:layout_toStartOf="@+id/login_button" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -92,7 +92,8 @@
         android:id="@+id/signup_textView"
         android:layout_marginTop="23dp"
         android:layout_below="@+id/login_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="toSignup" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -103,7 +104,7 @@
         android:layout_below="@+id/signup_textView"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <!--Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dashboard"
@@ -111,5 +112,5 @@
         android:onClick="toDashboard"
         android:layout_below="@+id/password"
         android:layout_alignLeft="@+id/remember_switch"
-        android:layout_alignStart="@+id/remember_switch" />
+        android:layout_alignStart="@+id/remember_switch" /-->
 </RelativeLayout>

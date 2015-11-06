@@ -68,4 +68,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }
+    public void toSignup(View view){
+        Intent intent = new Intent(this, SignupActivity.class);
+        startActivity(intent);
+    }
 }

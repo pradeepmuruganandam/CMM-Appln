@@ -4,5 +4,12 @@
     <string name="title_activity_project_choose">Construction Meeting Minutes App</string>
     <string name="project_title">Construction Meeting Minutes App</string>
     <string name="project_choose_prompt">Which Project do you want to choose ?</string>
+    <string name="project_type_choose_prompt">Which Type of meeting ?</string>
     <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="new_meeting_page">New Meeting Page</string>
+    <string name="view_meeting_page">View Meeting Page</string>
+    <string name="publish_meeting_page">Publish Meeting Page</string>
+    <string name="signup_activity_page">Signup Page</string>
+    <string name="edit_contact_page">Edit Contact Info Page</string>
+
 </resources>

@@ -7,8 +7,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_project_choose"
-    tools:context="usc.cs577.team06.cmm_appln.ProjectChooseActivity">
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/project_choose_prompt"
+        android:text="@string/project_type_choose_prompt"
         android:id="@+id/textView5"
         android:layout_marginTop="38dp"
         android:textColor="#161616"
@@ -33,20 +32,10 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ProjectList"
+        android:id="@+id/ProjectTypeList"
         android:choiceMode="singleChoice"
         android:layout_below="@+id/textView5"
         android:layout_alignLeft="@+id/textView5"
         android:layout_alignStart="@+id/textView5" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="New Project"
-        android:id="@+id/textView20"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:onClick="toNewProject" />
 </RelativeLayout>
